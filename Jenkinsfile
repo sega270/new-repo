@@ -4,7 +4,7 @@ pipeline{
     stage('Checkout'){
       step{
         echo 'Checking out repo'
-        git 'https://github.com/sega270/newrepoforjava.git'
+        git 'https://github.com/sega270/new-repo.git'
       }
     }
     stage('Publish'){
