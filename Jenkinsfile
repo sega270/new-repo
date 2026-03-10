@@ -1,7 +1,7 @@
 pipeline{
   agent any
   stages{
-    stage('Checkout'){
+    stage('checkout'){
       step{
         echo 'Checking out repo'
         git 'https://github.com/sega270/new-repo.git'
@@ -11,7 +11,7 @@ pipeline{
       steps{
         publishHTML([
           allowMissing:true,
-          alwaysLinktoLastBuild:false,
+          alwaysLinkToLastBuild:false,
           keepAll:false,
           reportDir:'.',
           reportFiles:'new.html',
